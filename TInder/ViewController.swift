@@ -33,8 +33,10 @@ class ViewController: UIViewController {
         let xFromCenter = card.center.x - view.center.x
         if xFromCenter > 0 {
             likeImageView.alpha = 1
+            likeImageView.tintColor = UIColor.blue
         } else if xFromCenter < 0 {
             badImageView.alpha = 1
+            badImageView.tintColor = UIColor.red
         }
         card.transform = CGAffineTransform(rotationAngle: xFromCenter / (view.frame.width / 2) * -0.785)
         if sender.state == UIGestureRecognizer.State.ended {
