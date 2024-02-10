@@ -16,6 +16,7 @@
 		0898FDCB2B77642E000255B5 /* TInderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898FDCA2B77642E000255B5 /* TInderTests.swift */; };
 		0898FDD52B77642E000255B5 /* TInderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898FDD42B77642E000255B5 /* TInderUITests.swift */; };
 		0898FDD72B77642E000255B5 /* TInderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898FDD62B77642E000255B5 /* TInderUITestsLaunchTests.swift */; };
+		0898FDE62B77881D000255B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898FDE52B77881C000255B5 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0898FDD02B77642E000255B5 /* TInderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TInderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0898FDD42B77642E000255B5 /* TInderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TInderUITests.swift; sourceTree = "<group>"; };
 		0898FDD62B77642E000255B5 /* TInderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TInderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0898FDE52B77881C000255B5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0898FDB32B77642C000255B5 /* AppDelegate.swift */,
 				0898FDB52B77642C000255B5 /* SceneDelegate.swift */,
 				0898FDB72B77642C000255B5 /* ViewController.swift */,
+				0898FDE52B77881C000255B5 /* ListViewController.swift */,
 				0898FDB92B77642C000255B5 /* Main.storyboard */,
 				0898FDBC2B77642E000255B5 /* Assets.xcassets */,
 				0898FDBE2B77642E000255B5 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				0898FDB82B77642C000255B5 /* ViewController.swift in Sources */,
 				0898FDB42B77642C000255B5 /* AppDelegate.swift in Sources */,
+				0898FDE62B77881D000255B5 /* ListViewController.swift in Sources */,
 				0898FDB62B77642C000255B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
