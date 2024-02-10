@@ -46,6 +46,7 @@ class ViewController: UIViewController {
 
             UIView.animate(withDuration: 0.2) {
                 card.center = self.cardOfCenter
+                card.transform = .identity
             }
         }
     }
