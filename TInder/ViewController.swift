@@ -27,7 +27,11 @@ class ViewController: UIViewController {
         let point = sender.translation(in: view)
 
         card.center = CGPoint(x: card.center.x + point.x, y: card.center.y + point.y)
+        if sender.state == UIGestureRecognizer.State.ended {
+            UIView.animate(withDuration: 0.2) {
+                card.center = self.cardOfCenter
+            }
+        }
     }
-    
 }
 
