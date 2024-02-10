@@ -24,6 +24,10 @@
                                         <rect key="frame" x="116" y="201" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bad" translatesAutoresizingMaskIntoConstraints="NO" id="fnl-Co-yhV">
+                                        <rect key="frame" x="116" y="201" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <gestureRecognizers/>
@@ -36,7 +40,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="badImageView" destination="fnl-Co-yhV" id="Jxd-My-Dwh"/>
                         <outlet property="basicCard" destination="7uu-Da-qEX" id="dQw-eY-aXW"/>
+                        <outlet property="likeImageView" destination="8Ne-0h-A0F" id="RgB-jI-K9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bad" width="256" height="256"/>
         <image name="good" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    @IBOutlet weak var likeImageView: UIImageView!
+    
+    @IBOutlet weak var badImageView: UIImageView!
     @IBOutlet weak var basicCard: UIView!
 
     var cardOfCenter: CGPoint!
@@ -29,6 +31,11 @@ class ViewController: UIViewController {
         card.center = CGPoint(x: card.center.x + point.x, y: card.center.y + point.y)
 
         let xFromCenter = card.center.x - view.center.x
+        if xFromCenter > 0 {
+            likeImageView.alpha = 1
+        } else if xFromCenter < 0 {
+            badImageView.alpha = 1
+        }
         card.transform = CGAffineTransform(rotationAngle: xFromCenter / (view.frame.width / 2) * -0.785)
         if sender.state == UIGestureRecognizer.State.ended {
             if card.center.x < 75 {
@@ -47,6 +54,8 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.2) {
                 card.center = self.cardOfCenter
                 card.transform = .identity
+                self.likeImageView.alpha = 0
+                self.badImageView.alpha = 0
             }
         }
     }
